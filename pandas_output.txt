@@ -1,0 +1,264 @@
+Shape (rows, columns): (246745, 41)
+
+Data types per column:
+page_id                                        str
+ad_id                                          str
+ad_creation_time                               str
+bylines                                        str
+currency                                       str
+delivery_by_region                             str
+demographic_distribution                       str
+estimated_audience_size                      int64
+estimated_impressions                        int64
+estimated_spend                              int64
+publisher_platforms                            str
+illuminating_scored_message                    str
+illuminating_mentions                          str
+scam_illuminating                            int64
+election_integrity_Truth_illuminating        int64
+advocacy_msg_type_illuminating               int64
+issue_msg_type_illuminating                  int64
+attack_msg_type_illuminating                 int64
+image_msg_type_illuminating                  int64
+cta_msg_type_illuminating                    int64
+engagement_cta_subtype_illuminating          int64
+fundraising_cta_subtype_illuminating         int64
+voting_cta_subtype_illuminating              int64
+covid_topic_illuminating                     int64
+economy_topic_illuminating                   int64
+education_topic_illuminating                 int64
+environment_topic_illuminating               int64
+foreign_policy_topic_illuminating            int64
+governance_topic_illuminating                int64
+health_topic_illuminating                    int64
+immigration_topic_illuminating               int64
+lgbtq_issues_topic_illuminating              int64
+military_topic_illuminating                  int64
+race_and_ethnicity_topic_illuminating        int64
+safety_topic_illuminating                    int64
+social_and_cultural_topic_illuminating       int64
+technology_and_privacy_topic_illuminating    int64
+womens_issue_topic_illuminating              int64
+incivility_illuminating                      int64
+freefair_illuminating                        int64
+fraud_illuminating                           int64
+dtype: object
+
+Summary statistics (numeric + categorical):
+                                                  page_id  ... fraud_illuminating
+count                                              246745  ...      246745.000000
+unique                                               4475  ...                NaN
+top     4d66f5853f0365dba032a87704a634f023d15babde973b...  ...                NaN
+freq                                                55503  ...                NaN
+mean                                                  NaN  ...           0.002638
+std                                                   NaN  ...           0.051297
+min                                                   NaN  ...           0.000000
+25%                                                   NaN  ...           0.000000
+50%                                                   NaN  ...           0.000000
+75%                                                   NaN  ...           0.000000
+max                                                   NaN  ...           1.000000
+
+[11 rows x 41 columns]
+
+Missing values per column:
+                                           missing_count  missing_pct
+page_id                                                0     0.000000
+ad_id                                                  0     0.000000
+ad_creation_time                                       0     0.000000
+bylines                                             1009     0.408924
+currency                                               0     0.000000
+delivery_by_region                                     0     0.000000
+demographic_distribution                               0     0.000000
+estimated_audience_size                                0     0.000000
+estimated_impressions                                  0     0.000000
+estimated_spend                                        0     0.000000
+publisher_platforms                                    0     0.000000
+illuminating_scored_message                            0     0.000000
+illuminating_mentions                                  0     0.000000
+scam_illuminating                                      0     0.000000
+election_integrity_Truth_illuminating                  0     0.000000
+advocacy_msg_type_illuminating                         0     0.000000
+issue_msg_type_illuminating                            0     0.000000
+attack_msg_type_illuminating                           0     0.000000
+image_msg_type_illuminating                            0     0.000000
+cta_msg_type_illuminating                              0     0.000000
+engagement_cta_subtype_illuminating                    0     0.000000
+fundraising_cta_subtype_illuminating                   0     0.000000
+voting_cta_subtype_illuminating                        0     0.000000
+covid_topic_illuminating                               0     0.000000
+economy_topic_illuminating                             0     0.000000
+education_topic_illuminating                           0     0.000000
+environment_topic_illuminating                         0     0.000000
+foreign_policy_topic_illuminating                      0     0.000000
+governance_topic_illuminating                          0     0.000000
+health_topic_illuminating                              0     0.000000
+immigration_topic_illuminating                         0     0.000000
+lgbtq_issues_topic_illuminating                        0     0.000000
+military_topic_illuminating                            0     0.000000
+race_and_ethnicity_topic_illuminating                  0     0.000000
+safety_topic_illuminating                              0     0.000000
+social_and_cultural_topic_illuminating                 0     0.000000
+technology_and_privacy_topic_illuminating              0     0.000000
+womens_issue_topic_illuminating                        0     0.000000
+incivility_illuminating                                0     0.000000
+freefair_illuminating                                  0     0.000000
+fraud_illuminating                                     0     0.000000
+
+Categorical column details:
+
+--- page_id ---
+Unique values: 4475
+page_id
+4d66f5853f0365dba032a87704a634f023d15babde973bb7a284ed8cd2707b2d    55503
+e3342051b60393770363ffc02946a0f76bc3e4155190d1f05fb0277b34bf6480    23988
+4ade404186269ec62d2dd7d9e0ed5f93a5f32c057516879d627ea9fbd628ef9b    14822
+330b2f35ded2161e63fbb2b5c5bdae05bff274ff31f990c275d28ce408671ce0    10461
+ec8ac6dc1cddc49972de2c31b62343fe3979729ec437c3b8d6ffa8915ab1401d     9851
+Name: count, dtype: int64
+
+--- ad_id ---
+Unique values: 246745
+ad_id
+0ddb025b8544e2d58e6977ad417e742a52522b3e1fc1c9d9b61c57148f8d72fc    1
+86229868e6bde3661724fe02da93504bb4fb5da8c2550d7b7cf193c687e89fa6    1
+07b5aefc27e872e971f793e49aac38496fa62e484f3928e2b6a2b6e3e08cac8d    1
+c62978153c04116d88ead49379916855f2cb58bf788631f26f3f1fcb2962ad48    1
+785e91ef18a5794565af03a6df4e7077fe1d915bfb34025019f3d42f43fcf9e8    1
+Name: count, dtype: int64
+
+--- ad_creation_time ---
+Unique values: 547
+ad_creation_time
+2024-10-27    8619
+2024-10-28    7356
+2024-10-26    6414
+2024-10-23    5021
+2024-10-25    4769
+Name: count, dtype: int64
+
+--- bylines ---
+Unique values: 3790
+bylines
+HARRIS FOR PRESIDENT                        49788
+HARRIS VICTORY FUND                         32612
+BIDEN VICTORY FUND                          15539
+DONALD J. TRUMP FOR PRESIDENT 2024, INC.    15112
+Trump National Committee JFC                 7279
+Name: count, dtype: int64
+
+--- currency ---
+Unique values: 18
+currency
+USD    246599
+INR        63
+GBP        17
+EUR        11
+PKR         8
+Name: count, dtype: int64
+
+--- delivery_by_region ---
+Unique values: 141122
+delivery_by_region
+{}                                                     30989
+{'Georgia': {'spend': 49, 'impressions': 499}}          2307
+{'Arizona': {'spend': 49, 'impressions': 499}}          2020
+{'Pennsylvania': {'spend': 49, 'impressions': 499}}     1912
+{'Nevada': {'spend': 49, 'impressions': 499}}           1870
+Name: count, dtype: int64
+
+--- demographic_distribution ---
+Unique values: 215622
+demographic_distribution
+{}                                                    30989
+{'female_65+': {'spend': 49, 'impressions': 499}}        44
+{'male_65+': {'spend': 49, 'impressions': 499}}          24
+{'female_65+': {'spend': 49, 'impressions': 1499}}       13
+{'female_65+': {'spend': 49, 'impressions': 2499}}       12
+Name: count, dtype: int64
+
+--- publisher_platforms ---
+Unique values: 9
+publisher_platforms
+['facebook', 'instagram']                                     214434
+['facebook']                                                   23259
+['instagram']                                                   8395
+['facebook', 'instagram', 'audience_network', 'messenger']       459
+['facebook', 'instagram', 'audience_network']                     79
+Name: count, dtype: int64
+
+--- illuminating_scored_message ---
+Unique values: 26338
+illuminating_scored_message
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855    5972
+82459467ad44f717f2089911f5210cce1ff025dc0cee03bdb2e60da827edb282    1887
+3b1d236346df93fd259a23d523f6deeed9b9939158b6f34b11854ea0f97ef35d    1352
+7e119dac6ca701d8070d0ca8c5b480f016523cb1b78748ee27d69e71c5017f8d    1341
+8e1144f0b13549c2652e19f6dd1ae523956a19671c5e4383a31f09d9325f1239    1172
+Name: count, dtype: int64
+
+--- illuminating_mentions ---
+Unique values: 278
+illuminating_mentions
+[]                     73205
+['Donald Trump']       53182
+['Kamala Harris']      31019
+['President Trump']    14580
+['Joe Biden']          14059
+Name: count, dtype: int64
+
+Numeric column check (spend, impressions, audience size):
+       estimated_spend  estimated_impressions  estimated_audience_size
+count    246745.000000          246745.000000             2.467450e+05
+mean       1061.291434           45601.525952             5.564629e+05
+std        4992.560749          136790.769901             4.098648e+05
+min          49.000000             499.000000             0.000000e+00
+25%          49.000000             499.000000             7.500000e+04
+50%          49.000000            3499.000000             3.000000e+05
+75%         449.000000           22499.000000             1.000001e+06
+max      474999.000000         1000000.000000             1.000001e+06
+
+============================================================
+GROUPED ANALYSIS: BY page_id
+============================================================
+Number of unique page_id groups: 4475
+
+Distribution of ad_count across all pages:
+count     4475.000000
+mean        55.138547
+std        971.897901
+min          1.000000
+25%          1.000000
+50%          3.000000
+75%          9.000000
+max      55503.000000
+Name: ad_count, dtype: float64
+
+Distribution of total_spend across all pages:
+count    4.475000e+03
+mean     5.851807e+04
+std      1.359132e+06
+min      4.900000e+01
+25%      9.800000e+01
+50%      4.980000e+02
+75%      3.445000e+03
+max      8.279565e+07
+Name: total_spend, dtype: float64
+
+Top 5 pages by total estimated spend:
+                                                    ad_count  ...  mean_impressions
+page_id                                                       ...                  
+4d66f5853f0365dba032a87704a634f023d15babde973bb...     55503  ...      53753.220655
+4ade404186269ec62d2dd7d9e0ed5f93a5f32c057516879...     14822  ...      56763.684523
+e3342051b60393770363ffc02946a0f76bc3e4155190d1f...     23988  ...      27904.250000
+ec8ac6dc1cddc49972de2c31b62343fe3979729ec437c3b...      9851  ...      33081.889757
+e3ee066f4a12968ba94847059a03c33965ca4eb1ead0f6f...      6581  ...      37791.816745
+
+[5 rows x 4 columns]
+
+============================================================
+GROUPED ANALYSIS: BY page_id + ad_id
+============================================================
+Number of unique (page_id, ad_id) groups: 246745
+Rows per group -> Mean: 1.0000, Min: 1, Max: 1
+Note: since ad_id is already unique per row, grouping by (page_id, ad_id) produces
+one row per group in this dataset -- this confirms ad_id uniquely identifies each ad.

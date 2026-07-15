@@ -1,0 +1,248 @@
+============================================================
+DATASET OVERVIEW
+============================================================
+Total rows: 246745
+Total columns: 41
+
+------------------------------------------------------------
+COLUMN: page_id
+  Inferred type: categorical
+  Missing values: 0
+  Count: 246745, Unique: 4475, Mode: 4d66f5853f0365dba032a87704a634f023d15babde973bb7a284ed8cd2707b2d (appears 55503 times)
+  Top 5: [('4d66f5853f0365dba032a87704a634f023d15babde973bb7a284ed8cd2707b2d', 55503), ('e3342051b60393770363ffc02946a0f76bc3e4155190d1f05fb0277b34bf6480', 23988), ('4ade404186269ec62d2dd7d9e0ed5f93a5f32c057516879d627ea9fbd628ef9b', 14822), ('330b2f35ded2161e63fbb2b5c5bdae05bff274ff31f990c275d28ce408671ce0', 10461), ('ec8ac6dc1cddc49972de2c31b62343fe3979729ec437c3b8d6ffa8915ab1401d', 9851)]
+------------------------------------------------------------
+COLUMN: ad_id
+  Inferred type: categorical
+  Missing values: 0
+  Count: 246745, Unique: 246745, Mode: 0ddb025b8544e2d58e6977ad417e742a52522b3e1fc1c9d9b61c57148f8d72fc (appears 1 times)
+  Top 5: [('0ddb025b8544e2d58e6977ad417e742a52522b3e1fc1c9d9b61c57148f8d72fc', 1), ('86229868e6bde3661724fe02da93504bb4fb5da8c2550d7b7cf193c687e89fa6', 1), ('07b5aefc27e872e971f793e49aac38496fa62e484f3928e2b6a2b6e3e08cac8d', 1), ('c62978153c04116d88ead49379916855f2cb58bf788631f26f3f1fcb2962ad48', 1), ('785e91ef18a5794565af03a6df4e7077fe1d915bfb34025019f3d42f43fcf9e8', 1)]
+------------------------------------------------------------
+COLUMN: ad_creation_time
+  Inferred type: date
+  Missing values: 0
+  Count: 246745, Unique: 547, Mode: 2024-10-27 (appears 8619 times)
+  Top 5: [('2024-10-27', 8619), ('2024-10-28', 7356), ('2024-10-26', 6414), ('2024-10-23', 5021), ('2024-10-25', 4769)]
+------------------------------------------------------------
+COLUMN: bylines
+  Inferred type: categorical
+  Missing values: 1009
+  Count: 245736, Unique: 3790, Mode: HARRIS FOR PRESIDENT (appears 49788 times)
+  Top 5: [('HARRIS FOR PRESIDENT', 49788), ('HARRIS VICTORY FUND', 32612), ('BIDEN VICTORY FUND', 15539), ('DONALD J. TRUMP FOR PRESIDENT 2024, INC.', 15112), ('Trump National Committee JFC', 7279)]
+------------------------------------------------------------
+COLUMN: currency
+  Inferred type: categorical
+  Missing values: 0
+  Count: 246745, Unique: 18, Mode: USD (appears 246599 times)
+  Top 5: [('USD', 246599), ('INR', 63), ('GBP', 17), ('EUR', 11), ('PKR', 8)]
+------------------------------------------------------------
+COLUMN: delivery_by_region
+  Inferred type: nested_dict
+  Missing values: 0
+  (summarized as: number of keys per row's dictionary)
+  Count: 246745, Mean: 21.9690, Min: 0.0, Max: 51.0, Stdev: 23.5292, Median: 2.0
+------------------------------------------------------------
+COLUMN: demographic_distribution
+  Inferred type: nested_dict
+  Missing values: 0
+  (summarized as: number of keys per row's dictionary)
+  Count: 246745, Mean: 13.0128, Min: 0.0, Max: 21.0, Stdev: 6.1165, Median: 16.0
+------------------------------------------------------------
+COLUMN: estimated_audience_size
+  Inferred type: numeric
+  Missing values: 0
+  Count: 246745, Mean: 556462.8560, Min: 0.0, Max: 1000001.0, Stdev: 409863.9283, Median: 300000.0
+------------------------------------------------------------
+COLUMN: estimated_impressions
+  Inferred type: numeric
+  Missing values: 0
+  Count: 246745, Mean: 45601.5260, Min: 499.0, Max: 1000000.0, Stdev: 136790.4927, Median: 3499.0
+------------------------------------------------------------
+COLUMN: estimated_spend
+  Inferred type: numeric
+  Missing values: 0
+  Count: 246745, Mean: 1061.2914, Min: 49.0, Max: 474999.0, Stdev: 4992.5506, Median: 49.0
+------------------------------------------------------------
+COLUMN: publisher_platforms
+  Inferred type: list
+  Missing values: 0
+  Count: 246745, Unique: 9, Mode: ['facebook', 'instagram'] (appears 214434 times)
+  Top 5: [("['facebook', 'instagram']", 214434), ("['facebook']", 23259), ("['instagram']", 8395), ("['facebook', 'instagram', 'audience_network', 'messenger']", 459), ("['facebook', 'instagram', 'audience_network']", 79)]
+------------------------------------------------------------
+COLUMN: illuminating_scored_message
+  Inferred type: categorical
+  Missing values: 0
+  Count: 246745, Unique: 26338, Mode: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 (appears 5972 times)
+  Top 5: [('e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855', 5972), ('82459467ad44f717f2089911f5210cce1ff025dc0cee03bdb2e60da827edb282', 1887), ('3b1d236346df93fd259a23d523f6deeed9b9939158b6f34b11854ea0f97ef35d', 1352), ('7e119dac6ca701d8070d0ca8c5b480f016523cb1b78748ee27d69e71c5017f8d', 1341), ('8e1144f0b13549c2652e19f6dd1ae523956a19671c5e4383a31f09d9325f1239', 1172)]
+------------------------------------------------------------
+COLUMN: illuminating_mentions
+  Inferred type: list
+  Missing values: 0
+  Count: 246745, Unique: 278, Mode: [] (appears 73205 times)
+  Top 5: [('[]', 73205), ("['Donald Trump']", 53182), ("['Kamala Harris']", 31019), ("['President Trump']", 14580), ("['Joe Biden']", 14059)]
+------------------------------------------------------------
+COLUMN: scam_illuminating
+  Inferred type: numeric
+  Missing values: 0
+  Count: 246745, Mean: 0.0716, Min: 0.0, Max: 1.0, Stdev: 0.2579, Median: 0.0
+------------------------------------------------------------
+COLUMN: election_integrity_Truth_illuminating
+  Inferred type: numeric
+  Missing values: 0
+  Count: 246745, Mean: 0.0501, Min: 0.0, Max: 1.0, Stdev: 0.2181, Median: 0.0
+------------------------------------------------------------
+COLUMN: advocacy_msg_type_illuminating
+  Inferred type: numeric
+  Missing values: 0
+  Count: 246745, Mean: 0.5486, Min: 0.0, Max: 1.0, Stdev: 0.4976, Median: 1.0
+------------------------------------------------------------
+COLUMN: issue_msg_type_illuminating
+  Inferred type: numeric
+  Missing values: 0
+  Count: 246745, Mean: 0.3816, Min: 0.0, Max: 1.0, Stdev: 0.4858, Median: 0.0
+------------------------------------------------------------
+COLUMN: attack_msg_type_illuminating
+  Inferred type: numeric
+  Missing values: 0
+  Count: 246745, Mean: 0.2719, Min: 0.0, Max: 1.0, Stdev: 0.4449, Median: 0.0
+------------------------------------------------------------
+COLUMN: image_msg_type_illuminating
+  Inferred type: numeric
+  Missing values: 0
+  Count: 246745, Mean: 0.2227, Min: 0.0, Max: 1.0, Stdev: 0.4161, Median: 0.0
+------------------------------------------------------------
+COLUMN: cta_msg_type_illuminating
+  Inferred type: numeric
+  Missing values: 0
+  Count: 246745, Mean: 0.5728, Min: 0.0, Max: 1.0, Stdev: 0.4947, Median: 1.0
+------------------------------------------------------------
+COLUMN: engagement_cta_subtype_illuminating
+  Inferred type: numeric
+  Missing values: 0
+  Count: 246745, Mean: 0.1249, Min: 0.0, Max: 1.0, Stdev: 0.3306, Median: 0.0
+------------------------------------------------------------
+COLUMN: fundraising_cta_subtype_illuminating
+  Inferred type: numeric
+  Missing values: 0
+  Count: 246745, Mean: 0.2285, Min: 0.0, Max: 1.0, Stdev: 0.4199, Median: 0.0
+------------------------------------------------------------
+COLUMN: voting_cta_subtype_illuminating
+  Inferred type: numeric
+  Missing values: 0
+  Count: 246745, Mean: 0.1438, Min: 0.0, Max: 1.0, Stdev: 0.3509, Median: 0.0
+------------------------------------------------------------
+COLUMN: covid_topic_illuminating
+  Inferred type: numeric
+  Missing values: 0
+  Count: 246745, Mean: 0.0249, Min: 0.0, Max: 1.0, Stdev: 0.1557, Median: 0.0
+------------------------------------------------------------
+COLUMN: economy_topic_illuminating
+  Inferred type: numeric
+  Missing values: 0
+  Count: 246745, Mean: 0.1221, Min: 0.0, Max: 1.0, Stdev: 0.3274, Median: 0.0
+------------------------------------------------------------
+COLUMN: education_topic_illuminating
+  Inferred type: numeric
+  Missing values: 0
+  Count: 246745, Mean: 0.0143, Min: 0.0, Max: 1.0, Stdev: 0.1188, Median: 0.0
+------------------------------------------------------------
+COLUMN: environment_topic_illuminating
+  Inferred type: numeric
+  Missing values: 0
+  Count: 246745, Mean: 0.0212, Min: 0.0, Max: 1.0, Stdev: 0.1442, Median: 0.0
+------------------------------------------------------------
+COLUMN: foreign_policy_topic_illuminating
+  Inferred type: numeric
+  Missing values: 0
+  Count: 246745, Mean: 0.0053, Min: 0.0, Max: 1.0, Stdev: 0.0724, Median: 0.0
+------------------------------------------------------------
+COLUMN: governance_topic_illuminating
+  Inferred type: numeric
+  Missing values: 0
+  Count: 246745, Mean: 0.0256, Min: 0.0, Max: 1.0, Stdev: 0.1581, Median: 0.0
+------------------------------------------------------------
+COLUMN: health_topic_illuminating
+  Inferred type: numeric
+  Missing values: 0
+  Count: 246745, Mean: 0.1092, Min: 0.0, Max: 1.0, Stdev: 0.3119, Median: 0.0
+------------------------------------------------------------
+COLUMN: immigration_topic_illuminating
+  Inferred type: numeric
+  Missing values: 0
+  Count: 246745, Mean: 0.0336, Min: 0.0, Max: 1.0, Stdev: 0.1801, Median: 0.0
+------------------------------------------------------------
+COLUMN: lgbtq_issues_topic_illuminating
+  Inferred type: numeric
+  Missing values: 0
+  Count: 246745, Mean: 0.0032, Min: 0.0, Max: 1.0, Stdev: 0.0567, Median: 0.0
+------------------------------------------------------------
+COLUMN: military_topic_illuminating
+  Inferred type: numeric
+  Missing values: 0
+  Count: 246745, Mean: 0.0022, Min: 0.0, Max: 1.0, Stdev: 0.0466, Median: 0.0
+------------------------------------------------------------
+COLUMN: race_and_ethnicity_topic_illuminating
+  Inferred type: numeric
+  Missing values: 0
+  Count: 246745, Mean: 0.0124, Min: 0.0, Max: 1.0, Stdev: 0.1108, Median: 0.0
+------------------------------------------------------------
+COLUMN: safety_topic_illuminating
+  Inferred type: numeric
+  Missing values: 0
+  Count: 246745, Mean: 0.0337, Min: 0.0, Max: 1.0, Stdev: 0.1805, Median: 0.0
+------------------------------------------------------------
+COLUMN: social_and_cultural_topic_illuminating
+  Inferred type: numeric
+  Missing values: 0
+  Count: 246745, Mean: 0.1058, Min: 0.0, Max: 1.0, Stdev: 0.3076, Median: 0.0
+------------------------------------------------------------
+COLUMN: technology_and_privacy_topic_illuminating
+  Inferred type: numeric
+  Missing values: 0
+  Count: 246745, Mean: 0.0012, Min: 0.0, Max: 1.0, Stdev: 0.0340, Median: 0.0
+------------------------------------------------------------
+COLUMN: womens_issue_topic_illuminating
+  Inferred type: numeric
+  Missing values: 0
+  Count: 246745, Mean: 0.0809, Min: 0.0, Max: 1.0, Stdev: 0.2727, Median: 0.0
+------------------------------------------------------------
+COLUMN: incivility_illuminating
+  Inferred type: numeric
+  Missing values: 0
+  Count: 246745, Mean: 0.1875, Min: 0.0, Max: 1.0, Stdev: 0.3903, Median: 0.0
+------------------------------------------------------------
+COLUMN: freefair_illuminating
+  Inferred type: numeric
+  Missing values: 0
+  Count: 246745, Mean: 0.0064, Min: 0.0, Max: 1.0, Stdev: 0.0798, Median: 0.0
+------------------------------------------------------------
+COLUMN: fraud_illuminating
+  Inferred type: numeric
+  Missing values: 0
+  Count: 246745, Mean: 0.0026, Min: 0.0, Max: 1.0, Stdev: 0.0513, Median: 0.0
+------------------------------------------------------------
+
+============================================================
+GROUPED ANALYSIS: BY page_id
+============================================================
+Number of unique page_id groups: 4475
+
+Distribution of ad_count across all pages:
+  Mean: 55.14, Min: 1.0, Max: 55503.0, Median: 3.0, Stdev: 971.79
+
+Distribution of total_spend across all pages:
+  Mean: 58518.07, Min: 49.0, Max: 82795647.0, Median: 498.0, Stdev: 1358980.27
+
+Top 5 pages by total estimated spend:
+  4d66f5853f0365dba032a87704a634f023d15babde973bb7a284ed8cd2707b2d: ad_count=55503, total_spend=82795647.00, mean_spend=1491.73, mean_impressions=53753.22
+  4ade404186269ec62d2dd7d9e0ed5f93a5f32c057516879d627ea9fbd628ef9b: ad_count=14822, total_spend=26367978.00, mean_spend=1778.98, mean_impressions=56763.68
+  e3342051b60393770363ffc02946a0f76bc3e4155190d1f05fb0277b34bf6480: ad_count=23988, total_spend=19609362.00, mean_spend=817.47, mean_impressions=27904.25
+  ec8ac6dc1cddc49972de2c31b62343fe3979729ec437c3b8d6ffa8915ab1401d: ad_count=9851, total_spend=10599999.00, mean_spend=1076.03, mean_impressions=33081.89
+  e3ee066f4a12968ba94847059a03c33965ca4eb1ead0f6f01d6f6ae65adb4841: ad_count=6581, total_spend=7634469.00, mean_spend=1160.08, mean_impressions=37791.82
+
+============================================================
+GROUPED ANALYSIS: BY page_id + ad_id
+============================================================
+Number of unique (page_id, ad_id) groups: 246745
+Rows per group -> Mean: 1.0000, Min: 1.0, Max: 1.0
+Note: since ad_id is already unique per row, grouping by (page_id, ad_id) produces
+one row per group in this dataset -- this confirms ad_id uniquely identifies each ad.
